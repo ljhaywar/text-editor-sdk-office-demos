@@ -1,0 +1,25 @@
+@import "main.css";
+
+body {
+  /* Photo by Thibault Trillet: https://www.pexels.com/photo/band-playing-on-stage-with-fire-167385/ */
+  background-image: url("images/concert2.jpg");
+  background-size: 100%;
+  color: #fafafa;
+  color-scheme: dark;
+  --ck-color-base-background: rgb(59, 59, 59);
+}
+
+input {
+  border-radius: 15px;
+  border: 0;
+  color-scheme: dark;
+}
+
+.button {
+  background-color: #3a90d1;
+  color: black;
+}
+
+grammarly-editor-plugin {
+  color-scheme: light;
+}

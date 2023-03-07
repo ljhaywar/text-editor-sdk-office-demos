@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Demo App</title>
+    <link href="./fundraising.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <h1>Lackawanna County Fundraisers</h1>
+
+    <form id="email" action="confirmation.html">
+      <div>
+        <label for="title">Campaign title:</label
+        ><grammarly-editor-plugin
+          config.activation="immediate"
+          config.toneDetector="on"
+          ><input type="text" id="title" value="Medical Bills for Meredith"
+        /></grammarly-editor-plugin>
+      </div>
+      <div>
+        <label for="name">Your name: </label
+        ><input type="text" id="name" value="Michael Scott" />
+      </div>
+      <div>
+        <label for="amount">Goal amount: </label
+        ><input type="text" id="goal" value="$3,000" />
+      </div>
+
+      <grammarly-editor-plugin
+        config.activation="immediate"
+        config.toneDetector="on"
+        config.autocomplete="on"
+      >
+        <div id="ck-div" contenteditable="true">
+          <ul>
+            <li>Fundraiser for Meredith's medical bills</li>
+            <li>She was hit by a car and fractured her pelvis</li>
+            <li>She also might have rabies</li>
+            <li>
+              I feel really bad about what happened and want to help her pay for
+              her bills
+            </li>
+          </ul>
+        </div>
+      </grammarly-editor-plugin>
+
+      <input type="submit" value="Publish Campaign" class="button" />
+    </form>
+
+    <div class="footer">
+      <a href="..">Back to all demos</a>
+    </div>
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+    <script>
+      // Create a classic editor instance
+      let emailEditor;
+      ClassicEditor.create(document.getElementById("ck-div")).then((editor) => {
+        emailEditor = editor;
+      });
+    </script>
+
+    <script src="https://unpkg.com/@grammarly/editor-sdk@2.3.9?clientId=client_9m1fYK3MPQxwKsib5CxtpB"></script>
+  </body>
+</html>

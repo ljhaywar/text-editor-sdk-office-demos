@@ -1,0 +1,28 @@
+@import "main.css";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap");
+
+body {
+  /* Photo by <a href="https://unsplash.com/@rhondak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">RhondaK Native Florida Folk Artist</a> on <a href="https://unsplash.com/photos/_Yc7OtfFn-0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
+  background-image: url("images/brushes-light.jpeg");
+  background-size: 100%;
+  color: #40458c;
+  font-family: "Manrope", sans-serif;
+}
+
+input {
+  border-radius: 15px;
+  border: 0;
+}
+
+label {
+  font-weight: 800;
+}
+
+grammarly-editor-plugin {
+  color: black;
+}
+
+.button {
+  background-color: #40458c;
+  color: white;
+}

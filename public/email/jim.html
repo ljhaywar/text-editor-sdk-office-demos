@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Demo App</title>
+  <link href="./main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <h1>New email</h2>
+
+  <form id="email" action="confirmation.html">
+    <input type="hidden" id="referringPage" value="jim.html">
+    <div><label for="from" >From:</label><input type="text" id="from" value="jim@example.com" readonly></div>
+    <div><label for="to" >To: </label><input type="text" id="to" value="watkins-dimola-engineering@example.com"></div>
+    <div><label for="cc" >CC: </label><input type="text" id="cc"></div>
+    <div> <label for="bcc" >BCC: </label><input type="text" id="bcc"></div>
+            
+    <div>
+      <label for="subject">Subject: </label><input type="text" id="subject" value="Paper that you'll love!">
+    </div> 
+
+
+
+      <div id="ck-div" contenteditable="true">
+        Cold sales email. Do u want to buy paper?
+      </div>
+
+    <input type="submit" value="Send" class="button">
+    
+  </form>
+
+  <div class="footer">
+   <a href="..">Back to all demos</a>
+  </div>
+
+  <script src="https://cdn.ckeditor.com/ckeditor5/34.0.0/classic/ckeditor.js"></script>
+
+  <script>
+
+    // Create a classic editor instance
+    let emailEditor;
+    ClassicEditor.create(document.getElementById("ck-div")).then(editor => {
+      emailEditor = editor;
+    })
+
+  </script>
+
+</body>
+
+</html>

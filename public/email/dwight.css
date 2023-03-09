@@ -22,4 +22,5 @@ input {
 
 grammarly-editor-plugin {
   color-scheme: light;
+  --grammarly-interactive-color: #3a90d1;
 }
